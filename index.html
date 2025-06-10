@@ -3,36 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
     <title>Weather Search</title>
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <form>
-      <input type="text" placeholder="Enter a city..." required />
-      <input type="submit" value="search" />
-    </form>
-    <main>
-      <h1>Italy</h1>
-      <p>
-        Tuesday 19:46, few clouds <br />
-        Humidity: 54%, Wind: 5.14km/h
-      </p>
-      <div>☁️10 &deg;C</div>
-    </main>
-    <footer>
-      Coded By
-      <a href="https://github.com/Khalipha-Saliso" target="blank"
-        >Khalipha Saliso</a
-      >.Coded and hosted on
-      <a
-        href="https://github.com/Khalipha-Saliso/Weather-Search-Engine"
-        target="blank"
-        >GitHub</a
-      >.Hosted on
-      <a
-        href="https://coded-by-khali-weather-search-engine.netlify.app/"
-        target="blank"
-        >Netlify</a
-      >
-    </footer>
+    <div class="weather-app">
+      <form>
+        <input type="text" placeholder="Enter a city..." required />
+        <input type="submit" value="search" />
+      </form>
+      <main>
+        <div>
+          <h1>Italy</h1>
+          <p>
+            Tuesday 19:46, few clouds <br />
+            Humidity: 54%, Wind: 5.14km/h
+          </p>
+        </div>
+        <div>☁️10 &deg;C</div>
+      </main>
+      <footer>
+        Coded By
+        <a href="https://github.com/Khalipha-Saliso" target="blank"
+          >Khalipha Saliso</a
+        >.Coded and hosted on
+        <a
+          href="https://github.com/Khalipha-Saliso/Weather-Search-Engine"
+          target="blank"
+          >GitHub</a
+        >.Hosted on
+        <a
+          href="https://coded-by-khali-weather-search-engine.netlify.app/"
+          target="blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
