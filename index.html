@@ -14,30 +14,46 @@
   </head>
   <body>
     <div class="weather-app">
-      <form>
-        <input type="text" placeholder="Enter a city..." required />
-        <input type="submit" value="search" />
-      </form>
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            id="search-form-input"
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
       <main>
-        <div>
-          <h1>Italy</h1>
-          <p>
-            Tuesday 19:46, few clouds <br />
-            Humidity: 54%, Wind: 5.14km/h
-          </p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city" id="city">Italy</h1>
+            <p class="weather-app-details">Tuesday
+              <span id="time">22:32</span>,
+              <span id="description">clear sky</span>
+              <br />
+              Humidity: <strong id="humidity">74%</strong>, Wind:
+              <strong id="wind-speed">4.12km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div id="icon"></div>
+            <div class="weather-app-temperature" id="temperature"></div>
+            <div class="weatehr-app-unit">☁️10°&deg;C</div>
+          </div>
         </div>
-        <div>☁️10 &deg;C</div>
       </main>
-      <footer>
         Coded By
         <a href="https://github.com/Khalipha-Saliso" target="blank"
           >Khalipha Saliso</a
-        >.Coded and hosted on
+        > Coded and hosted on
         <a
           href="https://github.com/Khalipha-Saliso/Weather-Search-Engine"
           target="blank"
           >GitHub</a
-        >.Hosted on
+        > Hosted on
         <a
           href="https://coded-by-khali-weather-search-engine.netlify.app/"
           target="blank"
