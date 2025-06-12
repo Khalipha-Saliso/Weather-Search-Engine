@@ -3,63 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
-      rel="stylesheet"
-    />
-    <title>Weather Search</title>
+    <title>Weather App</title>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <div class="weather-app">
-      <header>
-        <form class="search-form" id="search-form">
-          <input
-            type="search"
-            placeholder="Enter a city.."
-            required
-            id="search-form-input"
-            class="search-form-input"
-          />
-          <input type="submit" value="Search" class="search-form-button" />
-        </form>
-      </header>
-      <main>
-        <div class="weather-app-data">
-          <div>
-            <h1 class="weather-app-city" id="city">Italy</h1>
-            <p class="weather-app-details">Tuesday
-              <span id="time">22:32</span>,
-              <span id="description">clear sky</span>
-              <br />
-              Humidity: <strong id="humidity">74%</strong>, Wind:
-              <strong id="wind-speed">4.12km/h</strong>
-            </p>
-          </div>
-          <div class="weather-app-temperature-container">
-            <div id="icon"></div>
-            <div class="weather-app-temperature" id="temperature"></div>
-            <div class="weatehr-app-unit">☁️10°&deg;C</div>
-          </div>
+    <main id="weather-app">
+      <form id="weather-search-form">
+        <input id="city-input" type="text" placeholder="Enter a city.." />
+        <input id="submit-button" type="submit" value="Submit" />
+      </form>
+
+      <div id="weather-app-data">
+        <div id="weather-text">
+          <h1 id="city">Italy</h1>
+          <p>
+            <span id="date-time">Thursday 13:28</span>,
+            <span id="description">Clear sky</span> <br />
+            Humidity: <strong id="humidity">47%</strong>, Wind:
+            <strong id="wind-speed">2.57km/h</strong>
+          </p>
         </div>
-      </main>
+        <h2 id="temperature">☀️28&deg;C</h2>
+      </div>
+
+      <br />
+
+      <footer>
         Coded By
-        <a href="https://github.com/Khalipha-Saliso" target="blank"
-          >Khalipha Saliso</a
-        > Coded and hosted on
+        <a href="https://github.com/Khalipha-Saliso" target="_blank">
+          Khalipha Saliso</a
+        >
+        and hosted on
         <a
           href="https://github.com/Khalipha-Saliso/Weather-Search-Engine"
-          target="blank"
+          target="_blank"
           >GitHub</a
-        > Hosted on
+        >,
         <a
           href="https://coded-by-khali-weather-search-engine.netlify.app/"
-          target="blank"
+          target="_blank"
           >Netlify</a
         >
       </footer>
-    </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="src/script.js"></script>
   </body>
 </html>
